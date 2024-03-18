@@ -22,7 +22,11 @@ class _experienceState extends State<experience> {
              children: [
                Padding(
                  padding: const EdgeInsets.only(left: 10),
-                 child: Icon(Icons.arrow_back_ios,color: Colors.blue.shade800,),
+                 child: InkWell(
+                 onTap:
+                     () {
+                       Navigator.pop(context);
+                       },child: Icon(Icons.arrow_back_ios,color: Colors.blue.shade800,)),
                ),
              ],
            ),
@@ -44,7 +48,7 @@ class _experienceState extends State<experience> {
                 Container(height: 60,width: 350,
                   child: InkWell(onTap:
                       () {
-                    Navigator.pushNamed(context, '/experience');
+                    Navigator.pushNamed(context, '/hobbies');
                     introduction = {
                       'name':experiences,
                     };

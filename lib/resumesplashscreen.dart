@@ -21,7 +21,7 @@ class resumespalsh extends StatelessWidget {
                 Text('Free PDF Templates',style: TextStyle(color: Colors.deepPurple.shade800,fontSize: 25,fontWeight: FontWeight.bold,),),
                 Padding(
                   padding: const EdgeInsets.only(top:160),
-                  child: Image.asset("assets/cv image.webp"),
+                  child: Image.asset("assets/images.jpg"),
                 ),
                 SizedBox(height: 20),
                Row(

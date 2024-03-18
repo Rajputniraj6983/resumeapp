@@ -158,20 +158,65 @@ class _persoanldetailState extends State<persoanldetail> {
                   SizedBox(height: 20),
                   Padding(
                     padding: const EdgeInsets.only(left: 15),
+                    child: InkWell(onTap:
+                      () {
+                        Navigator.pushNamed(context, '/hobbies');
+                      },
+                      child: Container(height: 50,width: 360, decoration: BoxDecoration(borderRadius: BorderRadius.circular(15),color: Colors.white),
+                        child: Row(
+                          children: [
+                            Padding(
+                              padding: const EdgeInsets.only(left: 15),
+                              child: CircleAvatar(backgroundColor: Colors.blueAccent.shade100,
+                                child: Icon(Icons.flight,size: 30,color: Colors.black,),),
+                            ),SizedBox(width: 20),
+                            Text('Hobbies',style: TextStyle(color: Colors.black,fontSize: 20),),
+                            SizedBox(width: 165),
+                            Icon(Icons.arrow_forward_ios,size: 20,color: Colors.black,)
+                          ],
+                        ),
+
+                      ),
+                    ),
+                  ),
+                  SizedBox(height: 20),
+                  Padding(
+                    padding: const EdgeInsets.only(left: 15),
+                    child: InkWell(onTap:
+                      () {
+                        Navigator.pushNamed(context, '/languages');
+                      },
+                      child: Container(height: 50,width: 360, decoration: BoxDecoration(borderRadius: BorderRadius.circular(15),color: Colors.white),
+                        child: Row(
+                          children: [
+                            Padding(
+                              padding: const EdgeInsets.only(left: 15),
+                              child: CircleAvatar(backgroundColor: Colors.blueAccent.shade100,
+                                child: Icon(Icons.language,size: 30,color: Colors.black,),),
+                            ),SizedBox(width: 20),
+                            Text('Languages',style: TextStyle(color: Colors.black,fontSize: 20),),
+                            SizedBox(width: 140),
+                            Icon(Icons.arrow_forward_ios,size: 20,color: Colors.black,)
+                          ],
+                        ),
+                      ),
+                    ),
+                  ),SizedBox(height: 20),
+                  Padding(
+                    padding: const EdgeInsets.only(left: 15),
                     child: Container(height: 50,width: 360, decoration: BoxDecoration(borderRadius: BorderRadius.circular(15),color: Colors.white),
                       child: Row(
                         children: [
                           Padding(
                             padding: const EdgeInsets.only(left: 15),
                             child: CircleAvatar(backgroundColor: Colors.blueAccent.shade100,
-                              child: Icon(Icons.person_add_rounded,size: 30,color: Colors.black,),),
+                              child: Icon(Icons.person_sharp,size: 30,color: Colors.black,),),
                           ),SizedBox(width: 20),
-                          Text('Refrences',style: TextStyle(color: Colors.black,fontSize: 20),),
-                          SizedBox(width: 140),
+                          Text('References',style: TextStyle(color: Colors.black,fontSize: 20),),
+                          SizedBox(width: 135),
                           Icon(Icons.star,size: 30,color: Colors.yellow,)
                         ],
                       ),
-
                     ),
                   ),
                   SizedBox(height: 20),
@@ -186,41 +231,6 @@ class _persoanldetailState extends State<persoanldetail> {
                               child: Icon(Icons.star,size: 30,color: Colors.black,),),
                           ),SizedBox(width: 20),
                           Text('Certificates',style: TextStyle(color: Colors.black,fontSize: 20),),
-                          SizedBox(width: 125),
-                          Icon(Icons.star,size: 30,color: Colors.yellow,)
-                        ],
-                      ),
-                    ),
-                  ),SizedBox(height: 20),
-                  Padding(
-                    padding: const EdgeInsets.only(left: 15),
-                    child: Container(height: 50,width: 360, decoration: BoxDecoration(borderRadius: BorderRadius.circular(15),color: Colors.white),
-                      child: Row(
-                        children: [
-                          Padding(
-                            padding: const EdgeInsets.only(left: 15),
-                            child: CircleAvatar(backgroundColor: Colors.blueAccent.shade100,
-                              child: Icon(Icons.flight,size: 30,color: Colors.black,),),
-                          ),SizedBox(width: 20),
-                          Text('Hobbies',style: TextStyle(color: Colors.black,fontSize: 20),),
-                          SizedBox(width: 155),
-                          Icon(Icons.star,size: 30,color: Colors.yellow,)
-                        ],
-                      ),
-                    ),
-                  ),
-                  SizedBox(height: 20),
-                  Padding(
-                    padding: const EdgeInsets.only(left: 15),
-                    child: Container(height: 50,width: 360, decoration: BoxDecoration(borderRadius: BorderRadius.circular(15),color: Colors.white),
-                      child: Row(
-                        children: [
-                          Padding(
-                            padding: const EdgeInsets.only(left: 15),
-                            child: CircleAvatar(backgroundColor: Colors.blueAccent.shade100,
-                              child: Icon(Icons.person_add_rounded,size: 30,color: Colors.black,),),
-                          ),SizedBox(width: 20),
-                          Text('Languages',style: TextStyle(color: Colors.black,fontSize: 20),),
                           SizedBox(width: 130),
                           Icon(Icons.star,size: 30,color: Colors.yellow,)
                         ],

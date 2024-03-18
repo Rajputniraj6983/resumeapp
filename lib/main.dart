@@ -3,9 +3,13 @@ import 'package:resumeapp/contact.dart';
 import 'package:resumeapp/education.dart';
 import 'package:resumeapp/experience.dart';
 import 'package:resumeapp/intro.dart';
+import 'package:resumeapp/languages.dart';
+import 'package:resumeapp/pdf.dart';
 import 'package:resumeapp/personaldetail.dart';
 import 'package:resumeapp/resumesplashscreen.dart';
 import 'package:resumeapp/skills.dart';
+
+import 'hobbies.dart';
 
 void main() {
   runApp( MyApp());
@@ -27,6 +31,9 @@ class MyApp extends StatelessWidget {
         '/skills' : (context) => skills(),
         '/education' : (context) => education(),
         '/experience' : (context) => experience(),
+        '/hobbies' : (context) => hobbies(),
+        '/languages' : (context) => languages(),
+        '/pdf' : (context) => pdf(),
 
       },
 

@@ -23,7 +23,11 @@ class _skillsState extends State<skills> {
               centerTitle: true,
               leading: Row(
                 children: [SizedBox(width: 10),
-                  Icon(Icons.arrow_back_ios,color: Colors.blue,),
+                  InkWell(onTap:
+                      () {
+                        Navigator.pop(context);
+                      },
+                      child: Icon(Icons.arrow_back_ios,color: Colors.blue,)),
                 ],
               ),
                actions: [
@@ -63,9 +67,16 @@ class _skillsState extends State<skills> {
                     ),
                   ),
                   SizedBox(height: 490),
-                     Container(height: 60,width: 350,
-                       child: Center(child: Text('ADD SKILL',style: TextStyle(color: Colors.blue.shade800,fontWeight: FontWeight.bold,fontSize: 20),)),
-                        decoration: BoxDecoration(borderRadius: BorderRadius.circular(15),border: Border.all(color: Colors.blue.shade800,width: 2)),),
+                     InkWell(
+                     onTap:
+                       () {
+
+                       },
+
+                       child: Container(height: 60,width: 350,
+                         child: Center(child: Text('ADD SKILL',style: TextStyle(color: Colors.blue.shade800,fontWeight: FontWeight.bold,fontSize: 20),)),
+                          decoration: BoxDecoration(borderRadius: BorderRadius.circular(15),border: Border.all(color: Colors.blue.shade800,width: 2)),),
+                     ),
                   SizedBox(height: 15),
                   Container(height: 60,width: 350,
                     child: InkWell(onTap:
@@ -83,7 +94,7 @@ class _skillsState extends State<skills> {
                 ],
               ),
             )
-      ),
+           ),
       )
     );
   }

@@ -11,8 +11,11 @@ class intro extends StatefulWidget {
   State<intro> createState() => _introState();
 }
  TextEditingController name=TextEditingController();
+ String txtname=name.text;
  TextEditingController birthday=TextEditingController();
+ String txtbirthday=name.text;
  TextEditingController personalstaement=TextEditingController();
+ String txtpersonal=name.text;
 
 Map introduction={};
 
@@ -33,7 +36,12 @@ class _introState extends State<intro> {
                     onTap: () {
                      Navigator.pushNamed(context, '/persoanldetail');
                     },
-                child: Icon(Icons.arrow_back_ios,color: Colors.blue,)),
+                child: InkWell(
+                onTap:
+                    () {
+                      Navigator.pop(context);
+                    },
+                child: Icon(Icons.arrow_back_ios,color: Colors.blue,))),
                 Text('Back',style: TextStyle(color: Colors.blue),)
               ],
             ),
@@ -115,9 +123,9 @@ class _introState extends State<intro> {
                       () {
                         Navigator.pushNamed(context, '/contact');
                         introduction = {
-                          'name':name,
-                          'birthday':birthday,
-                          'personalstatement':personalstaement,
+                          'name':txtname,
+                          'birthday':txtbirthday,
+                          'personalstatement':txtpersonal,
                         };
                       },
                       child: Center(child: Text('Continue',style: TextStyle(color: Colors.white,fontWeight: FontWeight.bold,fontSize: 15),))) ,

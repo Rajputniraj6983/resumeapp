@@ -25,7 +25,12 @@ class _contactState extends State<contact> {
            leading: Row(
              children: [
                SizedBox(width: 10,),
-               Icon(Icons.arrow_back_ios,color: Colors.blue.shade800,),
+               InkWell(
+               onTap:
+                   () {
+                     Navigator.pop(context);
+                   },
+               child: Icon(Icons.arrow_back_ios,color: Colors.blue.shade800,)),
 
              ],
            ),

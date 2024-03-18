@@ -22,7 +22,12 @@ class _educationState extends State<education> {
                  centerTitle: true,
                   leading: Row(
                     children: [
-                      Icon(Icons.arrow_back_ios,color: Colors.blue.shade800,),
+                      InkWell(
+                      onTap:
+                          () {
+                            Navigator.pop(context);
+                          },
+                      child: Icon(Icons.arrow_back_ios,color: Colors.blue.shade800,)),
                     ],
                   ),
               actions: [
