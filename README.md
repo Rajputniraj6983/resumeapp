@@ -9,7 +9,7 @@ A few resources to get you started if this is your first Flutter project:
 
 - [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
 - [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)![Screenshot_20240320_114209-portrait]
-![Screenshot_20240320_114224-portrait]
+
 
 
 For help getting started with Flutter development, view the
@@ -20,7 +20,7 @@ For help getting started with Flutter development, view the
 samples, guidance on mobile development, and a full API reference.
 
 
-<p>![Screenshot_20240320_114250-portrait]
+<p>
 
 
   <img src = "https://github.com/Rajputniraj6983/resumeapp/assets/143181391/86e37cc1-a97c-44ab-ba6f-3f65abae0e87" width=200>
