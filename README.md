@@ -21,7 +21,7 @@ samples, guidance on mobile development, and a full API reference.
 
 
 <p>
-  <img src = "https://github.com/Rajputniraj6983/resumeapp/assets/143181391/c2abeefe-34c2-4e84-bd43-565bdc885e79" width=200>
+  <img src = "https://github.com/Rajputniraj6983/resumeapp/assets/143181391/9d46dc9d-e6c9-42d0-961c-59d475ca4614" width=200>
   <img src = "https://github.com/Rajputniraj6983/resumeapp/assets/143181391/1512b590-9956-4641-8c2a-89e080d89422" width=200>
   <img src = "https://github.com/Rajputniraj6983/resumeapp/assets/143181391/a6204b99-fa48-4741-92df-1f8cd0239ff0" width=200>
   <img src = "https://github.com/Rajputniraj6983/resumeapp/assets/143181391/c5873559-9336-47b2-a3e5-0cc4715417e3" width=200>
